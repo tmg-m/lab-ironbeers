@@ -1,3 +1,14 @@
-<div>
-    <h1>Random Beer</h1>
+<div class="random-content">
+  {{#each beersFromApi}}
+    <div class="beer-container">
+				<div class="img-container">
+					<img class="beer-img" src="{{image_url}}">
+				</div>
+        <div class="discription">
+          <h1>{{name}}</h1>
+          <h4 style="color: grey">{{tagline}}</h4>
+        	<h3>{{description}}</h3>
+        </div>
+    </div>
+{{/each}}
 </div>
